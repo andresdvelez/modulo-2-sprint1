@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sprint-1 modulo 2</title>
+  </head>
+  <body>
+    <article class="main__container">
+      <!-- 
+        - CHATS LIST SECTION
+       -->
+      <section class="side__container">
+        <header class="header">
+          <figure class="chats-img">
+            <img
+              class="profileImg"
+              id="chatsProfileImg"
+              alt="Tu foto de perfil"
+            />
+          </figure>
+        </header>
+        <div class="chats__finder">
+          <div class="chats__finder-container">
+            <figure class="chats__finder-icon">
+              <img class="icon" id="searchIcon" alt="Buscar chat" />
+            </figure>
+            <input
+              id="chatsFinderInput"
+              placeholder="Buscar o iniciar un nuevo chat"
+              type="text"
+              class="chats__finder-input"
+            />
+          </div>
+        </div>
+        <ul id="chatList" class="chat-list">
+          <li class="chat-list-item">
+            <figure class="chat-img">
+              <img class="profileImg" id="chatsImg" alt="" />
+            </figure>
+            <div class="chat__info">
+              <div class="chat__info-top">
+                <p class="chat__info-top-name">Ingrid</p>
+                <p class="chat__info-top-lastMsg">Viernes</p>
+              </div>
+              <div class="chat__info-bottom">
+                <figure class="chat__info-bottom-readIcon">
+                  <img id="readIcon" alt="" />
+                  <img id="readIcon" alt="" />
+                </figure>
+                <p class="chat__info-bottom-last">Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 
+        - CHAT SECTION
+       -->
+      <section class="msg__container">
+        <header class="header msg__header">
+          <div class="msg__profile">
+            <figure class="msg__profile-img">
+              <img class="profileImg" id="msgProfileImg" alt="Foto de perfil" />
+            </figure>
+            <div class="msg__profile-details">
+              <p class="msg__profile-name">Josefa</p>
+              <p class="msg__profile-status">En Línea</p>
+            </div>
+          </div>
+          <button id="msgSearchBtn" class="msg__search">
+            <img class="icon" id="searchIcon" alt="Buscar" />
+          </button>
+        </header>
+        <section class="msg__chat">
+          <img id="chatBg" alt="" class="chat-pannel-bg" />
+          <p class="msg__chat-msg">Hola</p>
+        </section>
+        <div class="msg__container-bottom">
+          <figure class="bottom-icon">
+            <img class="icon" id="emojisBtn" alt="Emojis" />
+          </figure>
+          <figure class="bottom-icon">
+            <img class="icon" id="filesBtn" alt="Upload a file" />
+          </figure>
+          <form class="msg__form" id="msgForm">
+            <input
+              class="msg-input"
+              id="msgInput"
+              placeholder="Escribe un mensaje"
+              type="text"
+            />
+          </form>
+          <figure class="msg-submitBtn">
+            <img class="icon" id="msgSendBtn" alt="Enviar mensaje" />
+          </figure>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
