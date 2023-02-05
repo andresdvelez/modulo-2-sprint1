@@ -1,6 +1,224 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
+/*-----------------------------------*\
+  #VARIABLES
+/-----------------------------------*/
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+ion-icon,
+textarea {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f87879;
+  font-family: system, -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, Lucida Grande, Kohinoor Devanagari, sans-serif;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.profileImg {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  height: 20px;
+}
+
+.header {
+  background-color: #eff2f6;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+.main__container {
+  display: flex;
+}
+
+.side__container {
+  width: 30vw;
+}
+
+.msg__container {
+  width: 70vw;
+}
+
+/*-----------------------------------*\
+  #SIDE CHATS
+\*-----------------------------------*/
+.chats__finder {
+  background-color: #f6f6f6;
+  padding: 1rem;
+  height: 80px;
+}
+.chats__finder-container {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 26px;
+  height: 48px;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.chat-list-item {
+  border-bottom: 1px solid rgba(112, 110, 106, 0.2196078431);
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.chat__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+.chat__info-top {
+  display: flex;
+  justify-content: space-between;
+}
+.chat__info-top-lastMsg {
+  color: rgba(104, 102, 99, 0.8039215686);
+  font-size: 12px;
+}
+.chat__info-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.chat__info-bottom-readIcon {
+  display: flex;
+  width: 8px;
+  height: 8px;
+}
+.chat__info-bottom-last {
+  color: rgba(104, 102, 99, 0.8039215686);
+  font-size: 12px;
+}
+
+/*-----------------------------------*\
+  #CHAT PANNEL
+\*-----------------------------------*/
+.msg__container {
+  height: calc(100vh - 140px);
+}
+
+.msg__header {
+  border-left: 1px solid rgba(112, 110, 106, 0.2196078431);
+}
+
+.msg__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.msg__profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.msg__profile-status {
+  color: rgba(104, 102, 99, 0.8039215686);
+  font-size: 14px;
+}
+
+.msg__chat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-pannel-bg {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.msg__container-bottom {
+  background-color: #f6f6f6;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.msg__form {
+  display: flex;
+  align-items: center;
+}
+
+.msg-input {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0.9rem 1.5rem;
+  width: 770px;
 }
