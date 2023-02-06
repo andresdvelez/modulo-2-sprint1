@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sprint-1 modulo 2</title>
-  <script defer src="js/app.bundle.js?9bd02ad422c93c3bf5b8"></script><link href="css/app.bundle.css?9bd02ad422c93c3bf5b8" rel="stylesheet"></head>
+  <script defer src="js/app.bundle.js?7b1a25a77d501b0a39e4"></script><link href="css/app.bundle.css?7b1a25a77d501b0a39e4" rel="stylesheet"></head>
   <body>
     <article class="main__container">
       <!-- 
@@ -59,6 +59,32 @@
       <!-- 
         - CHAT SECTION
        -->
+      <aside id="sideFinder" class="side-finder">
+        <header>
+          <div class="top">
+            <button>
+              <img id="closeSideMsg" alt="Close side finder" />
+            </button>
+            <p class="side-finder-name">Mensajes con Josefa</p>
+          </div>
+          <form id="msgSearchForm" class="side-finder-form">
+            <div class="msgForm__container">
+              <button>
+                <img class="icon" id="searchIcon" alt="" />
+              </button>
+              <input
+                type="text"
+                placeholder="Buscar mensaje"
+                id="msgFormInput"
+                class="msgForm__container-input"
+              />
+              <button class="msgForm__container-clean">
+                <img class="icon" id="closeSideMsg" alt="" />
+              </button>
+            </div>
+          </form>
+        </header>
+      </aside>
       <section class="msg__container">
         <header class="header msg__header">
           <div class="msg__profile">
@@ -74,9 +100,14 @@
             <img class="icon" id="searchIcon" alt="Buscar" />
           </button>
         </header>
-        <section class="msg__chat">
-          <img id="chatBg" alt="" class="chat-pannel-bg" />
-          <p class="msg__chat-msg">Hola</p>
+        <section
+          style="background-image: url(./images/chat-bg.jpeg)"
+          id="chatPannel"
+          class="msg__chat"
+        >
+          <div class="msg__chat-day-container">
+            <p class="msg__chat-day">Jueves</p>
+          </div>
         </section>
         <div class="msg__container-bottom">
           <figure class="bottom-icon">

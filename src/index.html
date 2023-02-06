@@ -59,6 +59,32 @@
       <!-- 
         - CHAT SECTION
        -->
+      <aside id="sideFinder" class="side-finder">
+        <header>
+          <div class="top">
+            <button>
+              <img id="closeSideMsg" alt="Close side finder" />
+            </button>
+            <p class="side-finder-name">Mensajes con Josefa</p>
+          </div>
+          <form id="msgSearchForm" class="side-finder-form">
+            <div class="msgForm__container">
+              <button>
+                <img class="icon" id="searchIcon" alt="" />
+              </button>
+              <input
+                type="text"
+                placeholder="Buscar mensaje"
+                id="msgFormInput"
+                class="msgForm__container-input"
+              />
+              <button class="msgForm__container-clean">
+                <img class="icon" id="closeSideMsg" alt="" />
+              </button>
+            </div>
+          </form>
+        </header>
+      </aside>
       <section class="msg__container">
         <header class="header msg__header">
           <div class="msg__profile">
@@ -74,9 +100,14 @@
             <img class="icon" id="searchIcon" alt="Buscar" />
           </button>
         </header>
-        <section class="msg__chat">
-          <img id="chatBg" alt="" class="chat-pannel-bg" />
-          <p class="msg__chat-msg">Hola</p>
+        <section
+          style="background-image: url(./images/chat-bg.jpeg)"
+          id="chatPannel"
+          class="msg__chat"
+        >
+          <div class="msg__chat-day-container">
+            <p class="msg__chat-day">Jueves</p>
+          </div>
         </section>
         <div class="msg__container-bottom">
           <figure class="bottom-icon">

@@ -6,6 +6,7 @@ $white-bg: #fff;
 $soft-white: #f6f6f6;
 $davys-grey: #686663cd;
 $light-grey: #706e6a38;
+$white-alpha-20: hsla(0, 0%, 100%, 0.1);
 
 /*-----------------------------------*\
   #RESET
@@ -75,7 +76,7 @@ body {
   font-family: system, -apple-system, system-ui, BlinkMacSystemFont,
     Helvetica Neue, Helvetica, Arial, Lucida Grande, Kohinoor Devanagari,
     sans-serif;
-    overflow: hidden;
+  overflow: hidden;
   width: 100vw;
 }
 
@@ -96,6 +97,7 @@ body {
   background-color: $header-bg;
   padding: 0.6rem 1rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -178,6 +180,54 @@ body {
 }
 
 /*-----------------------------------*\
+  #SIDE FINDER MESSAGE
+\*-----------------------------------*/
+.side-finder {
+  background-color: $header-bg;
+  position: absolute;
+  right: -28rem;
+  height: 100vh;
+  width: max-content;
+  z-index: 99;
+
+  transition: 250ms ease;
+
+  &.active {
+    right: 0;
+  }
+
+  & > header {
+    padding: 1.5rem;
+
+    & > .top {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    & > .side-finder-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > .msgForm__container {
+        background-color: $white-bg;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 1rem;
+        width: 25rem;
+
+        & > .msgForm__container-input {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------------*\
   #CHAT PANNEL
 \*-----------------------------------*/
 .msg__container {
@@ -205,15 +255,26 @@ body {
   }
 }
 
-.msg__chat {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.msg__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 0.4rem;
+  transition: 150ms ease;
+  height: 1.5rem;
+  width: 1.5rem;
+  &:hover {
+    background-color: $light-grey;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
-.chat-pannel-bg {
-  object-fit: cover;
-  position: absolute;
+.msg__chat {
+  position: relative;
+  padding-block-end: 20px;
+  padding-block-start: 20px;
   width: 100%;
   height: 100%;
 }
@@ -236,4 +297,18 @@ body {
   border-radius: 30px;
   padding: 0.9rem 1.5rem;
   width: 770px;
+}
+
+.msg__chat-day-container {
+  display: flex;
+  justify-content: center;
+}
+
+.msg__chat-day {
+  background-color: $header-bg;
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  width: max-content;
 }

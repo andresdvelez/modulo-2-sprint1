@@ -91,6 +91,7 @@ body {
   background-color: #eff2f6;
   padding: 0.6rem 1rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -165,6 +166,47 @@ body {
 }
 
 /*-----------------------------------*\
+  #SIDE FINDER MESSAGE
+\*-----------------------------------*/
+.side-finder {
+  background-color: #eff2f6;
+  position: absolute;
+  right: -28rem;
+  height: 100vh;
+  width: max-content;
+  z-index: 99;
+  transition: 250ms ease;
+}
+.side-finder.active {
+  right: 0;
+}
+.side-finder > header {
+  padding: 1.5rem;
+}
+.side-finder > header > .top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.side-finder > header > .side-finder-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-finder > header > .side-finder-form > .msgForm__container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 1rem;
+  width: 25rem;
+}
+.side-finder > header > .side-finder-form > .msgForm__container > .msgForm__container-input {
+  margin-left: 1rem;
+}
+
+/*-----------------------------------*\
   #CHAT PANNEL
 \*-----------------------------------*/
 .msg__container {
@@ -190,15 +232,26 @@ body {
   font-size: 14px;
 }
 
-.msg__chat {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.msg__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 0.4rem;
+  transition: 150ms ease;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.msg__search:hover {
+  background-color: rgba(112, 110, 106, 0.2196078431);
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.chat-pannel-bg {
-  object-fit: cover;
-  position: absolute;
+.msg__chat {
+  position: relative;
+  padding-block-end: 20px;
+  padding-block-start: 20px;
   width: 100%;
   height: 100%;
 }
@@ -221,4 +274,18 @@ body {
   border-radius: 30px;
   padding: 0.9rem 1.5rem;
   width: 770px;
+}
+
+.msg__chat-day-container {
+  display: flex;
+  justify-content: center;
+}
+
+.msg__chat-day {
+  background-color: #eff2f6;
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  width: max-content;
 }

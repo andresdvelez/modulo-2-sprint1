@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -16,7 +15,8 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _scripts_UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/UI */ \"./src/scripts/UI.js\");\n\n\n\n//# sourceURL=webpack://sprint-1/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _scripts_UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/UI */ \"./src/scripts/UI.js\");\n/* harmony import */ var _scripts_sideFinder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/sideFinder */ \"./src/scripts/sideFinder.js\");\n/* harmony import */ var _scripts_sideFinder__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scripts_sideFinder__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack://sprint-1/./src/index.js?");
 
 /***/ }),
 
@@ -26,17 +26,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_chat_bg_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/chat-bg.jpeg */ \"./src/images/chat-bg.jpeg\");\n/* harmony import */ var _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/profileImg.png */ \"./src/images/profileImg.png\");\n/* harmony import */ var _images_search_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/search.svg */ \"./src/images/search.svg\");\n/* harmony import */ var _images_check_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/check.svg */ \"./src/images/check.svg\");\n/* harmony import */ var _images_smile_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/smile.svg */ \"./src/images/smile.svg\");\n/* harmony import */ var _images_paperclip_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/paperclip.svg */ \"./src/images/paperclip.svg\");\n/* harmony import */ var _images_send_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/send.svg */ \"./src/images/send.svg\");\n// Setting images\nvar chatsProfileImg = document.getElementById(\"chatsProfileImg\");\nvar searchIcon = document.querySelectorAll(\"#searchIcon\");\nvar chatsImg = document.getElementById(\"chatsImg\");\nvar readIcon = document.querySelectorAll(\"#readIcon\");\nvar msgProfileImg = document.getElementById(\"msgProfileImg\");\nvar emojisBtn = document.getElementById(\"emojisBtn\");\nvar filesBtn = document.getElementById(\"filesBtn\");\nvar msgSendBtn = document.getElementById(\"msgSendBtn\");\nvar chatBg = document.getElementById(\"chatBg\");\n\n\n\n\n\n\n\nchatBg.src = _images_chat_bg_jpeg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nmsgSendBtn.src = _images_send_svg__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\nfilesBtn.src = _images_paperclip_svg__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nemojisBtn.src = _images_smile_svg__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nmsgProfileImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nchatsImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nchatsProfileImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nfor (var i = 0, len = searchIcon.length; i < len; i++) {\n  searchIcon[i].src = _images_search_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n}\nfor (var _i = 0, _len = readIcon.length; _i < _len; _i++) {\n  readIcon[_i].src = _images_check_svg__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n}\n\n//# sourceURL=webpack://sprint-1/./src/scripts/UI.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_x_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/x.svg */ \"./src/images/x.svg\");\n/* harmony import */ var _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/profileImg.png */ \"./src/images/profileImg.png\");\n/* harmony import */ var _images_search_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/search.svg */ \"./src/images/search.svg\");\n/* harmony import */ var _images_check_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/check.svg */ \"./src/images/check.svg\");\n/* harmony import */ var _images_smile_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/smile.svg */ \"./src/images/smile.svg\");\n/* harmony import */ var _images_paperclip_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/paperclip.svg */ \"./src/images/paperclip.svg\");\n/* harmony import */ var _images_send_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/send.svg */ \"./src/images/send.svg\");\n// Setting images\nvar chatsProfileImg = document.getElementById(\"chatsProfileImg\");\nvar searchIcon = document.querySelectorAll(\"#searchIcon\");\nvar chatsImg = document.getElementById(\"chatsImg\");\nvar readIcon = document.querySelectorAll(\"#readIcon\");\nvar msgProfileImg = document.getElementById(\"msgProfileImg\");\nvar emojisBtn = document.getElementById(\"emojisBtn\");\nvar filesBtn = document.getElementById(\"filesBtn\");\nvar msgSendBtn = document.getElementById(\"msgSendBtn\");\nvar closeSideMsg = document.querySelectorAll(\"#closeSideMsg\");\n\n\n\n\n\n\n\nmsgSendBtn.src = _images_send_svg__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\nfilesBtn.src = _images_paperclip_svg__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\nemojisBtn.src = _images_smile_svg__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nmsgProfileImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nchatsImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nchatsProfileImg.src = _images_profileImg_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nfor (var i = 0, len = closeSideMsg.length; i < len; i++) {\n  closeSideMsg[i].src = _images_x_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n}\nfor (var _i = 0, _len = searchIcon.length; _i < _len; _i++) {\n  searchIcon[_i].src = _images_search_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n}\nfor (var _i2 = 0, _len2 = readIcon.length; _i2 < _len2; _i2++) {\n  readIcon[_i2].src = _images_check_svg__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n}\n\n//# sourceURL=webpack://sprint-1/./src/scripts/UI.js?");
 
 /***/ }),
 
-/***/ "./src/images/chat-bg.jpeg":
-/*!*********************************!*\
-  !*** ./src/images/chat-bg.jpeg ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/scripts/sideFinder.js":
+/*!***********************************!*\
+  !*** ./src/scripts/sideFinder.js ***!
+  \***********************************/
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/chat-bg.jpeg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/chat-bg.jpeg?");
+eval("var msgSearchBtn = document.getElementById(\"msgSearchBtn\");\nvar sideFinder = document.getElementById(\"sideFinder\");\nvar closeSideMsg = document.getElementById(\"closeSideMsg\");\nmsgSearchBtn.addEventListener(\"click\", function () {\n  sideFinder.classList.add(\"active\");\n});\ncloseSideMsg.addEventListener(\"click\", function () {\n  sideFinder.classList.remove(\"active\");\n});\n\n//# sourceURL=webpack://sprint-1/./src/scripts/sideFinder.js?");
 
 /***/ }),
 
@@ -46,6 +47,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/check.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/check.svg?");
 
 /***/ }),
@@ -56,6 +58,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/paperclip.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/paperclip.svg?");
 
 /***/ }),
@@ -66,6 +69,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/profileImg.png\");\n\n//# sourceURL=webpack://sprint-1/./src/images/profileImg.png?");
 
 /***/ }),
@@ -76,6 +80,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/search.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/search.svg?");
 
 /***/ }),
@@ -86,6 +91,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/send.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/send.svg?");
 
 /***/ }),
@@ -96,7 +102,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/smile.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/smile.svg?");
+
+/***/ }),
+
+/***/ "./src/images/x.svg":
+/*!**************************!*\
+  !*** ./src/images/x.svg ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/x.svg\");\n\n//# sourceURL=webpack://sprint-1/./src/images/x.svg?");
 
 /***/ }),
 
@@ -106,6 +124,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sprint-1/./src/style.scss?");
 
 /***/ })
@@ -137,6 +156,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
