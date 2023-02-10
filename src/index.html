@@ -11,6 +11,23 @@
       <!-- 
         - CHATS LIST SECTION
        -->
+      <form id="sideForm" class="side__form">
+        <header class="side__form-header">
+          <p class="side__form-header-title">Login</p>
+        </header>
+        <div class="side__form-body">
+          <div class="side__form-body-blank">
+            <p>Tu nombre</p>
+            <input type="text" id="inputName" />
+          </div>
+          <div class="side__form-body-blank">
+            <p>Tu número</p>
+            <input type="number" id="inputPhone" />
+          </div>
+        </div>
+        <button type="submit" class="side__form-btn">Log In</button>
+      </form>
+      <div id="overlayForm" class="overlay__form"></div>
       <section class="side__container">
         <header class="header">
           <figure class="chats-img">
@@ -34,26 +51,7 @@
             />
           </div>
         </div>
-        <ul id="chatList" class="chat-list">
-          <li class="chat-list-item">
-            <figure class="chat-img">
-              <img class="profileImg" id="chatsImg" alt="" />
-            </figure>
-            <div class="chat__info">
-              <div class="chat__info-top">
-                <p class="chat__info-top-name">Ingrid</p>
-                <p class="chat__info-top-lastMsg">Viernes</p>
-              </div>
-              <div class="chat__info-bottom">
-                <figure class="chat__info-bottom-readIcon">
-                  <img id="readIcon" alt="" />
-                  <img id="readIcon" alt="" />
-                </figure>
-                <p class="chat__info-bottom-last">Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <ul id="chatList" class="chat-list"></ul>
       </section>
 
       <!-- 
@@ -100,15 +98,7 @@
             <img class="icon" id="searchIcon" alt="Buscar" />
           </button>
         </header>
-        <section
-          style="background-image: url(./images/chat-bg.jpeg)"
-          id="chatPannel"
-          class="msg__chat"
-        >
-          <div class="msg__chat-day-container">
-            <p class="msg__chat-day">Jueves</p>
-          </div>
-        </section>
+        <section id="chatPannel" class="msg__chat"></section>
         <div class="msg__container-bottom">
           <figure class="bottom-icon">
             <img class="icon" id="emojisBtn" alt="Emojis" />
@@ -123,10 +113,10 @@
               placeholder="Escribe un mensaje"
               type="text"
             />
+            <button class="msg-submitBtn">
+              <img class="icon" id="msgSendBtn" alt="Enviar mensaje" />
+            </button>
           </form>
-          <figure class="msg-submitBtn">
-            <img class="icon" id="msgSendBtn" alt="Enviar mensaje" />
-          </figure>
         </div>
       </section>
     </article>
